@@ -1,0 +1,1 @@
+body{font:14px system-ui,sans-serif;width:290px;padding:18px;margin:0;background:#15171b;color:#f5f5f5}h1{font-size:20px;margin:0}p,small{color:#c9cbd0;line-height:1.5}label{display:flex;gap:12px;align-items:center;padding:14px 0}input{width:20px;height:20px;accent-color:#fa5058}input:focus-visible{outline:2px solid white;outline-offset:3px}#status{min-height:42px}

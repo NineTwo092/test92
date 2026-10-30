@@ -1,0 +1,9 @@
+{
+  "name": "youtube-adblock-local",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.cjs"
+  },
+  "license": "MIT"
+}

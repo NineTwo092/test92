@@ -1,0 +1,82 @@
+TAP version 13
+# Subtest: MV3, permissões mínimas e apenas sites HTTPS esperados
+ok 1 - MV3, permissões mínimas e apenas sites HTTPS esperados
+  ---
+  duration_ms: 1.9648
+  type: 'test'
+  ...
+# Subtest: scripts e popup têm sintaxe válida e sem chamadas de rede
+ok 2 - scripts e popup têm sintaxe válida e sem chamadas de rede
+  ---
+  duration_ms: 2.4438
+  type: 'test'
+  ...
+# Subtest: regras têm IDs únicos, ação block e escopo exato
+ok 3 - regras têm IDs únicos, ação block e escopo exato
+  ---
+  duration_ms: 0.3357
+  type: 'test'
+  ...
+# Subtest: publicidade conhecida corresponde somente ao iniciador e tipo autorizados
+ok 4 - publicidade conhecida corresponde somente ao iniciador e tipo autorizados
+  ---
+  duration_ms: 0.6396
+  type: 'test'
+  ...
+# Subtest: mídia, APIs, domínios semelhantes e outros sites são preservados
+ok 5 - mídia, APIs, domínios semelhantes e outros sites são preservados
+  ---
+  duration_ms: 0.8215
+  type: 'test'
+  ...
+# Subtest: controle por site não altera o outro e persiste booleano
+ok 6 - controle por site não altera o outro e persiste booleano
+  ---
+  duration_ms: 1.8396
+  type: 'test'
+  ...
+# Subtest: mensagens inválidas e remetentes externos não mudam estado
+ok 7 - mensagens inválidas e remetentes externos não mudam estado
+  ---
+  duration_ms: 1.2028
+  type: 'test'
+  ...
+# Subtest: falha de armazenamento desfaz regra e fila continua funcionando
+ok 8 - falha de armazenamento desfaz regra e fila continua funcionando
+  ---
+  duration_ms: 1.2655
+  type: 'test'
+  ...
+# Subtest: falha DNR não grava preferência cosmética
+ok 9 - falha DNR não grava preferência cosmética
+  ---
+  duration_ms: 1.3909
+  type: 'test'
+  ...
+# Subtest: comandos concorrentes são serializados
+ok 10 - comandos concorrentes são serializados
+  ---
+  duration_ms: 1.5522
+  type: 'test'
+  ...
+# Subtest: CSS ativa/desativa sem duplicação e ignora preferência do outro site
+ok 11 - CSS ativa/desativa sem duplicação e ignora preferência do outro site
+  ---
+  duration_ms: 1.4159
+  type: 'test'
+  ...
+# Subtest: leitura inicial atrasada não sobrescreve alteração mais recente
+ok 12 - leitura inicial atrasada não sobrescreve alteração mais recente
+  ---
+  duration_ms: 0.9604
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 89.9221

@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube AdBlock Local",
+  "version": "0.1.0",
+  "description": "Filtros locais de publicidade para YouTube e YouTube Music.",
+  "minimum_chrome_version": "120",
+  "permissions": [
+    "storage",
+    "declarativeNetRequest"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "YouTube AdBlock"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://music.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "youtube",
+        "enabled": true,
+        "path": "rules/youtube.json"
+      },
+      {
+        "id": "music",
+        "enabled": true,
+        "path": "rules/music.json"
+      }
+    ]
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'"
+  }
+}
